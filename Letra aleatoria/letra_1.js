@@ -10,16 +10,14 @@ num_ale = Math.round (num_ale);
 // transforma el numero en letra
 letra_ale =String.fromCharCode(num_ale);
 
- // alert(letra_ale);
+  //alert(letra_ale);
 
- var n = 1;
-  while (n < 6) {
-    alert("Intento número "+ n);
+  for (var i =1; i < 6; i++) {
+    alert("Intento número "+ i);
    var respuesta = prompt(" Introduce una letra ");
-        n++;
      if (letra_ale != respuesta) {
-       alert("No has acertado,intentalo de nuevo!");
-     }
+        alert("No has acertado,intentalo de nuevo!");
+       }
      if (letra_ale == respuesta) {
        alert("Has acertado,felicidadees!");
         break;
